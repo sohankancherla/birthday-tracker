@@ -44,11 +44,11 @@ To get a local copy up and running follow these steps.
 
 Before you begin, ensure you have the following installed:
 
-* Python: The application is built using Python. If you don't have Python installed, download and install it from python.org
+* Python: The application is built using Python. If you don't have Python installed, download and install it from https://www.python.org/
 
 * pip: This is a Python package installer. It usually comes with Python, but if you don’t have it, follow the installation guide: https://pip.pypa.io/en/stable/installation/
 
-* SQLite: Most Python installations include SQLite by default. However, if you need to install it, you can follow the instructions on the SQLite website: sqlite.org
+* SQLite: Most Python installations include SQLite by default. However, if you need to install it, you can follow the instructions on the SQLite website: https://sqlite.org/index.html
 
 ### Installation
 
