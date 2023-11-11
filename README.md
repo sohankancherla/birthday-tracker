@@ -38,7 +38,7 @@ This project leverages a combination of web and backend technologies. Below is a
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these steps.
 
 ### Prerequisites
 
