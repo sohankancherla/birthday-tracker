@@ -25,19 +25,27 @@ def after_request(response):
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-
-        # TODO: Add the user's entry into the database
+        # Get the data that needs to be added to the databse using POST
         name = request.form.get("name")
         month = request.form.get("month")
-        day = request.form.get("day")
+        day = request.form.get("day") 
 
+        # Insert data into the db
         db.execute("INSERT INTO birthdays (name, month, day) VALUES(?, ?, ?)", name, month, day)
+
         return redirect("/")
 
     else:
+        # Get the data from the databse and pass it to index.html
+        birthdays = db.execute("SELECT * FROM birthdays")
+        return render_template("index.html", birthdays=birthdays)
 
-        # TODO: Display the entries in the database on index.html
-
-        return render_template("index.html")
+@app.route("/delete", methods=["POST"])
+def delete():
+    # Delete the id when button is pressed
+    id = request.form.get("id")
+    if id:
+        db.execute("DELETE FROM birthdays WHERE id = ?", id)
+    return redirect("/")
 
 
