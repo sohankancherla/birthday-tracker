@@ -84,5 +84,5 @@ Visit http://localhost:5000 to access the application.
 
 ## Authors
 
-* **Sohan Kancherla** - *Comp Sci Student* - [Sohan Kancherla](https://github.com/sohankancherla) - *Finished Project*
+* **Sohan Kancherla** - *Comp Sci Student* - [Sohan Kancherla](https://github.com/sohankancherla) - *Developer*
 
